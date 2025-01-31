@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoub | Creative Technologist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="toekomstige-baan.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#coding" class="nav-link">Development</a>
+        <a href="#producing" class="nav-link">Music</a>
+        <a href="#favorites" class="nav-link">Favorites</a>
+        <a href="#vakken" class="nav-link">Vakken</a> 
+    </nav>
+
+    <div class="music-player">
+        <audio id="background-music" src="Foot On Em - Izaya Tiji Archive.mp3" loop></audio>
+        <div class="audio-controls">
+            <button id="play-pause-btn" class="play-pause">
+                <svg class="play-icon active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            </button>
+            <div class="audio-progress">
+                <input type="range" id="progress-slider" min="0" max="100" value="0">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="volume-control">
+                <svg class="volume-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+    </div>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="standalone-images">
+                <img src="sama.jpeg" alt="Image 1">
+                <img src="flower.gif" alt="Image 2">
+                <img src="tree.gif" alt="Image 3">
+            </div>
+            <h1>Ayoub</h1>
+            <p>17 </p>
+        </div>
+    </section>
+
+    <section id="coding">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>C++/c# Development</h2>
+                <p>C++ is een taal die ik wil leren. Ik weet zelf niet echt wat ik in de toekomst wil worden en eigenlijk verandert het elke paar jaren en maanden voor me. Maar wat altid al wel in me hoofd zit is dat ik wil coderen maar er zit ook altijd wel een gedachte in me hoofd van dat AI het over kan nemen en dat de banenmarkt klein ofzelf niet gaat bestaan ervoor. waardoor ik ook andere dingen zou willen worden die niet zo makkelijk over genomen worden door AI. een andere taal die ook zou willen doen is c# c# lijkt me leuker en je kan er ook meer dingen doen. c++ en c# zijn dingen die ik wil leren python weet ik al wat van daarom zet ik het dus hier niet in en van javascript weet ik ook wel wat van </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">systemen ontwerpen</span>
+                    <span class="skill-tag">website ontwerpen</span>
+                    <span class="skill-tag">App Development</span>
+                </div>
+            </div>
+            <div class="section-image">
+                <img src="coding.png" alt="C++ Development">
+            </div>
+        </div>
+    </section>
+
+    <section id="producing">
+        <div class="section-container">
+            <div class="section-image">
+                <img src="fl.png" alt="Music Production">
+            </div>
+            <div class="section-text">
+                <h2>Music Production</h2>
+                <p>Beats maken doe ik veel in me vrije tijd ik doe het nu al voor ongeveer 6 maanden en ik heb veel geleerd en ik vind zelf dat ik ook snel heb geleerd. ik ben eigenlijk begonnen met beats maken door music luisteren en ik wou eigenlijk weten hoe de producers de beats hebben gemaakt dus ik begon om te leren hoe ze werden gemaakt welke plugins en begon meer te leren over hoe beats worden gemaakt. Me favorietste producers zijn tdf xangang wifi goyxrd boolymon of xaviersobased. Me meest gebruikte plugins zijn serum omnisphere zenology en purity </p>
+                <div class="music-skills">
+                    <div class="skill-tag">Trap</div>
+                    <div class="skill-tag">FL studio</div>
+                </div>
+               
+                <button class="see-beats-btn" onclick="pauseMusicAndOpenBeats()">See My Beats</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="favorites">
+        <div class="section-container">
+            <div class="favorites-grid">
+                <div class="favorites-column movies">
+                    <h3>Top 3 Movies</h3>
+                    <ul>
+                        <li data-description="top1">
+                            <img src="parasite.jpg" alt="Parasite">
+                            <span>Parasite</span>
+                        </li>
+                        <li data-description="top3.">
+                            <img src="memories of murder.jpg" alt="Memories of Murder">
+                            <span>Memories of Murder</span>
+                        </li>
+                        <li data-description="top 2.">
+                            <img src="getout.jpg" alt="Get Out">
+                            <span>Get Out</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="favorites-column artists">
+                    <h3>Top 3 Artists</h3>
+                    <ul>
+                        <li data-description="top1">
+                            <img src="summrs.jpg" alt="Summrs">
+                            <span>Summrs</span>
+                        </li>
+                        <li data-description="footonem">
+                            <img src="izaya tiji.jpg" alt="Izaya Tiji">
+                            <span>Izaya Tiji</span>
+                        </li>
+                        <li data-description="sak">
+                            <img src="ohsxnta.jpg" alt="Ohxnsta">
+                            <span>Ohxnsta</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="favorites-column games">
+                    <h3>Top 3 Games</h3>
+                    <ul>
+                        <li data-description="top3">
+                            <img src="fortnite.jpg" alt="Fortnite">
+                            <span>Fortnite</span>
+                        </li>
+                        <li data-description="top1.">
+                            <img src="sekiro.jpg" alt="Sekiro">
+                            <span>Sekiro</span>
+                        </li>
+                        <li data-description="top2">
+                            <img src="skate3.jpg" alt="Skate 3">
+                            <span>Skate 3</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="favorites-preview">
+                <img id="preview-image" src="flower.gif" alt="Preview Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="vakken">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>Vakken</h2>
+                <p>Dit zijn de vakken die ik momenteel volg.</p>
+                <div class="vakken-grid">
+                    <div class="vakken-item"><h3>Sport</h3><p>sport vind ik leuk je doet veel verschillende dingen zoals voetbal of trefbal.</p></div>
+                    <div class="vakken-item"><h3>HTML</h3><p>Html vind ik waarschijnlijk het leukste vak je moet websites maken</p></div>
+                    <div class="vakken-item"><h3>Windows Server</h3><p>Bij Windows Server doe je verschillende dingen in VMware.</p></div>
+                    <div class="vakken-item"><h3>Basis ICT</h3><p>Bij Basis ICT leer je over computer onderdelen.</p></div>
+                    <div class="vakken-item"><h3>Nederlands</h3><p>Nederlands is gewoon nederlands</p></div>
+                    <div class="vakken-item"><h3>Rekenen</h3><p>bij rekenen moet je vooral oppervlaktes berekenen of hoeken</p></div>
+                    <div class="vakken-item"><h3>Leren Loopbaan</h3><p>leren loopbaan gaat vooral gewoon over alles eigenlijk</p></div>
+                    <div class="vakken-item"><h3>Engels</h3><p>engels vind ik ook leuk.</p></div>
+                    <div class="vakken-item"><h3>Datacom</h3><p>Bij Datacom moet je in een app genaamd Cisco Packet Tracer een netwerk bouwen met verschillende devices en je moet IP's instellen.</p></div>
+                    <div class="vakken-item"><h3>Service Desk</h3><p>Bij servicedesk moet je werken met topdesk</p></div>
+                    <div class="vakken-item"><h3>Linux</h3><p>Linux moet je linux os runnen op je vm en je leert hoe linux werkt</p></div>
+                    <div class="vakken-item"><h3>MOS</h3><p>MOS is gwn microsoft excel and powerpoint niet het leukste vak</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="toekomstige-baan.js"></script>
+</body>
+</html>

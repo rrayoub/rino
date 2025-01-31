@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="toekomstige-baan.css">
+</head>
+<body>
+    <!-- Beats Section -->
+    <section id="beats">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>My Beats</h2>
+                <p>Check out some of my latest beats and music productions.</p>
+                <!-- Go Back Button -->
+                <button class="see-beats-btn" onclick="closeCurrentTab()">
+                    Go Back to Main Site
+                </button>
+            </div>
+            <div class="section-image">
+                <!-- Add your video here -->
+                <video controls width="100%">
+                    <source src="farmliferoc.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to close the current tab
+        function closeCurrentTab() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
